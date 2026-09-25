@@ -1,0 +1,193 @@
+{
+  "tool": {
+    "id": "conversao-de-acuidade-visual",
+    "title": "Conversão de acuidade visual",
+    "short": "Snellen, decimal e logMAR",
+    "desc": "Converta a acuidade visual entre Snellen (20/x e 6/x), decimal e logMAR, com a categoria de deficiência visual da OMS (CID-11).",
+    "lead": "Converte a acuidade visual entre as notações mais usadas e classifica a deficiência visual segundo as categorias da Organização Mundial da Saúde.",
+    "spec": [
+      "oftalmologia",
+      "medicina-de-trafego",
+      "medicina-do-trabalho",
+      "medicina-legal-e-pericia-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "modo",
+        "Notação informada",
+        "radio",
+        {
+          "opts": {
+            "s20": "Snellen 20/x (pés)",
+            "s6": "Snellen 6/x (metros)",
+            "dec": "Decimal",
+            "log": "logMAR"
+          }
+        }
+      ],
+      [
+        "valor",
+        "Valor (em Snellen, só o denominador)",
+        "num",
+        {
+          "min": -0.4,
+          "max": 2000,
+          "step": 0.01,
+          "ph": "40"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Decimal</strong> = numerador ÷ denominador do Snellen (20/40 = 0,5). <strong>logMAR</strong> = −log<sub>10</sub>(decimal) = log<sub>10</sub>(MAR), em que MAR é o mínimo ângulo de resolução em minutos de arco. Cada linha da tabela ETDRS vale 0,1 logMAR (5 letras de 0,02).</p>",
+    "table": [
+      [
+        "Categoria (OMS, melhor olho)",
+        "Acuidade"
+      ],
+      [
+        "Sem deficiência",
+        "6/12 (20/40; 0,5) ou melhor"
+      ],
+      [
+        "Leve",
+        "Pior que 6/12 até 6/18 (20/60)"
+      ],
+      [
+        "Moderada",
+        "Pior que 6/18 até 6/60 (20/200)"
+      ],
+      [
+        "Grave",
+        "Pior que 6/60 até 3/60 (20/400)"
+      ],
+      [
+        "Cegueira",
+        "Pior que 3/60"
+      ]
+    ],
+    "tips": [
+      "Para estatísticas e ensaios clínicos, use <strong>logMAR</strong>: é a única escala linear, em que é possível fazer médias e diferenças.",
+      "As categorias da OMS usam a acuidade <strong>apresentada</strong> (com a correção em uso) do <strong>melhor olho</strong>.",
+      "Conta dedos, movimentos de mão e percepção luminosa não têm equivalente logMAR padronizado; registre-os por extenso.",
+      "Uma queda de 0,2 logMAR (2 linhas) ou mais é considerada perda clinicamente relevante na maioria dos estudos."
+    ],
+    "sources": [
+      [
+        "Holladay JT. Visual acuity measurements. J Cataract Refract Surg, 2004.",
+        "https://doi.org/10.1016/j.jcrs.2004.01.014"
+      ],
+      [
+        "Ferris FL et al. New visual acuity charts for clinical research. Am J Ophthalmol, 1982.",
+        "https://doi.org/10.1016/0002-9394(82)90197-0"
+      ],
+      [
+        "Organização Mundial da Saúde. Blindness and vision impairment (fact sheet).",
+        "https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"
+      ]
+    ],
+    "cases": [
+      [
+        "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        {
+          "modo": "s20",
+          "valor": 40
+        },
+        {
+          "raw": {
+            "dec": 0.5,
+            "logmar": 0.301
+          },
+          "level": "low",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        {
+          "modo": "s6",
+          "valor": 60
+        },
+        {
+          "raw": {
+            "dec": 0.1,
+            "logmar": 1
+          },
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "logMAR 0 = decimal 1,0 = 20/20",
+        {
+          "modo": "log",
+          "valor": 0
+        },
+        {
+          "raw": {
+            "dec": 1,
+            "snellen20": 20
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Decimal 0,04 = 20/500: cegueira",
+        {
+          "modo": "dec",
+          "valor": 0.04
+        },
+        {
+          "raw": {
+            "snellen20": 500,
+            "logmar": 1.398
+          },
+          "level": "high",
+          "verdict": "cegueira",
+          "tol": 0.005
+        }
+      ],
+      [
+        "Snellen 20/3 (fora da faixa): erro",
+        {
+          "modo": "s20",
+          "valor": 3
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}

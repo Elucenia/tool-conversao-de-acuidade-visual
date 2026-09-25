@@ -1,0 +1,97 @@
+[
+  {
+    "label": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+    "input": {
+      "modo": "s20",
+      "valor": 40
+    },
+    "expected": {
+      "raw": {
+        "dec": 0.5,
+        "logmar": 0.301
+      },
+      "level": "low",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "modo": "s20",
+      "valor": 40
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+    "input": {
+      "modo": "s6",
+      "valor": 60
+    },
+    "expected": {
+      "raw": {
+        "dec": 0.1,
+        "logmar": 1
+      },
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "modo": "s6",
+      "valor": 60
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "logMAR 0 = decimal 1,0 = 20/20",
+    "input": {
+      "modo": "log",
+      "valor": 0
+    },
+    "expected": {
+      "raw": {
+        "dec": 1,
+        "snellen20": 20
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "modo": "log",
+      "valor": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Decimal 0,04 = 20/500: cegueira",
+    "input": {
+      "modo": "dec",
+      "valor": 0.04
+    },
+    "expected": {
+      "raw": {
+        "snellen20": 500,
+        "logmar": 1.398
+      },
+      "level": "high",
+      "verdict": "cegueira",
+      "tol": 0.005
+    },
+    "originalInput": {
+      "modo": "dec",
+      "valor": 0.04
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Snellen 20/3 (fora da faixa): erro",
+    "input": {
+      "modo": "s20",
+      "valor": 3
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "modo": "s20",
+      "valor": 3
+    },
+    "expandedZeroOptions": []
+  }
+]
