@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-conversao-de-acuidade-visual · Elucenia · https://github.com/Elucenia/tool-conversao-de-acuidade-visual
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"conversao-de-acuidade-visual","title":"Conversão de acuidade visual","fields":[["modo","Notação informada","radio",{"opts":{"s20":"Snellen 20/x (pés)","s6":"Snellen 6/x (metros)","dec":"Decimal","log":"logMAR"}}],["valor","Valor (em Snellen, só o denominador)","num",{"min":-0.4,"max":2000,"step":0.01,"ph":"40"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
