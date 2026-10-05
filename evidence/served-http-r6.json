@@ -1,0 +1,1041 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "conversao-de-acuidade-visual",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/conversao-de-acuidade-visual/calculator.js",
+    "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744",
+    "bytes": 5515
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "conversao-de-acuidade-visual",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+      "originalInput": {
+        "modo": "s20",
+        "valor": 40
+      },
+      "input": {
+        "modo": "s20",
+        "valor": 40
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "dec": 0.5,
+          "logmar": 0.301
+        },
+        "level": "low",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "0,30",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.5,
+          "logmar": 0.3010299956639812,
+          "snellen20": 40
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "modo": "s20",
+            "valor": 40
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+          "startedAt": "2026-10-05T17:36:18.130Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-acuidade-visual",
+              "main": [
+                "0,30",
+                "logMAR"
+              ],
+              "label": "Acuidade visual",
+              "raw": {
+                "dec": 0.5,
+                "logmar": 0.3010299956639812,
+                "snellen20": 40
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "5f76c8183b4e51c62c0f431f89f5150a5ad1d308b1bd6217864c03a11ffa1e26",
+          "bytes": 197,
+          "elapsedMs": 5.824300000000221
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "startedAt": "2026-10-05T17:36:18.130Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-acuidade-visual",
+            "main": [
+              "0,30",
+              "logMAR"
+            ],
+            "label": "Acuidade visual",
+            "raw": {
+              "dec": 0.5,
+              "logmar": 0.3010299956639812,
+              "snellen20": 40
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "5f76c8183b4e51c62c0f431f89f5150a5ad1d308b1bd6217864c03a11ffa1e26",
+        "bytes": 197,
+        "elapsedMs": 5.824300000000221
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.dec",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 0.005,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.logmar",
+            "expected": 0.301,
+            "obtained": 0.3010299956639812,
+            "tolerance": 0.005,
+            "difference": 0.00002999566398120823,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dec",
+            "expected": 0.5,
+            "obtained": 0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.logmar",
+            "expected": 0.3010299956639812,
+            "obtained": 0.3010299956639812,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.snellen20",
+            "expected": 40,
+            "obtained": 40,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0,30",
+            "obtained": "0,30",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "logMAR",
+            "obtained": "logMAR",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-acuidade-visual",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+      "originalInput": {
+        "modo": "s6",
+        "valor": 60
+      },
+      "input": {
+        "modo": "s6",
+        "valor": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "dec": 0.1,
+          "logmar": 1
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "recordedResult": {
+        "main": [
+          "1,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.1,
+          "logmar": 1,
+          "snellen20": 200
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "modo": "s6",
+            "valor": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+          "startedAt": "2026-10-05T17:36:18.444Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-acuidade-visual",
+              "main": [
+                "1,00",
+                "logMAR"
+              ],
+              "label": "Acuidade visual",
+              "raw": {
+                "dec": 0.1,
+                "logmar": 1,
+                "snellen20": 200
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3c49b48558175d378db9bda191f9c8422045a8fa79df9ce9706ae9dd7e1deb94",
+          "bytes": 181,
+          "elapsedMs": 5.702600000004168
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "startedAt": "2026-10-05T17:36:18.444Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-acuidade-visual",
+            "main": [
+              "1,00",
+              "logMAR"
+            ],
+            "label": "Acuidade visual",
+            "raw": {
+              "dec": 0.1,
+              "logmar": 1,
+              "snellen20": 200
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3c49b48558175d378db9bda191f9c8422045a8fa79df9ce9706ae9dd7e1deb94",
+        "bytes": 181,
+        "elapsedMs": 5.702600000004168
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.dec",
+            "expected": 0.1,
+            "obtained": 0.1,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.logmar",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dec",
+            "expected": 0.1,
+            "obtained": 0.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.logmar",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.snellen20",
+            "expected": 200,
+            "obtained": 200,
+            "tolerance": 2e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1,00",
+            "obtained": "1,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "logMAR",
+            "obtained": "logMAR",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-acuidade-visual",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "logMAR 0 = decimal 1,0 = 20/20",
+      "originalInput": {
+        "modo": "log",
+        "valor": 0
+      },
+      "input": {
+        "modo": "log",
+        "valor": 0
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "dec": 1,
+          "snellen20": 20
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "-0,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 1,
+          "logmar": 0,
+          "snellen20": 20
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "modo": "log",
+            "valor": 0
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+          "startedAt": "2026-10-05T17:36:18.743Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-acuidade-visual",
+              "main": [
+                "-0,00",
+                "logMAR"
+              ],
+              "label": "Acuidade visual",
+              "raw": {
+                "dec": 1,
+                "logmar": 0,
+                "snellen20": 20
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c177ec13356936eaa2618d13395112b6c1e13b738dde040adbb314b5f1a476a1",
+          "bytes": 179,
+          "elapsedMs": 8.360899999999674
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "startedAt": "2026-10-05T17:36:18.743Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-acuidade-visual",
+            "main": [
+              "-0,00",
+              "logMAR"
+            ],
+            "label": "Acuidade visual",
+            "raw": {
+              "dec": 1,
+              "logmar": 0,
+              "snellen20": 20
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c177ec13356936eaa2618d13395112b6c1e13b738dde040adbb314b5f1a476a1",
+        "bytes": 179,
+        "elapsedMs": 8.360899999999674
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.dec",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.snellen20",
+            "expected": 20,
+            "obtained": 20,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dec",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.logmar",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.snellen20",
+            "expected": 20,
+            "obtained": 20,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "-0,00",
+            "obtained": "-0,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "logMAR",
+            "obtained": "logMAR",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-acuidade-visual",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Decimal 0,04 = 20/500: cegueira",
+      "originalInput": {
+        "modo": "dec",
+        "valor": 0.04
+      },
+      "input": {
+        "modo": "dec",
+        "valor": 0.04
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "snellen20": 500,
+          "logmar": 1.398
+        },
+        "level": "high",
+        "verdict": "cegueira",
+        "tol": 0.005
+      },
+      "recordedResult": {
+        "main": [
+          "1,40",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.04,
+          "logmar": 1.3979400086720375,
+          "snellen20": 500
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "modo": "dec",
+            "valor": 0.04
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+          "startedAt": "2026-10-05T17:36:19.057Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "conversao-de-acuidade-visual",
+              "main": [
+                "1,40",
+                "logMAR"
+              ],
+              "label": "Acuidade visual",
+              "raw": {
+                "dec": 0.04,
+                "logmar": 1.3979400086720375,
+                "snellen20": 500
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "eb56e25982a5d288c0ede2dd3cabce2b57b631b4cba7882477bb31895db0a0eb",
+          "bytes": 199,
+          "elapsedMs": 2.9833999999973457
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "startedAt": "2026-10-05T17:36:19.057Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "conversao-de-acuidade-visual",
+            "main": [
+              "1,40",
+              "logMAR"
+            ],
+            "label": "Acuidade visual",
+            "raw": {
+              "dec": 0.04,
+              "logmar": 1.3979400086720375,
+              "snellen20": 500
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "eb56e25982a5d288c0ede2dd3cabce2b57b631b4cba7882477bb31895db0a0eb",
+        "bytes": 199,
+        "elapsedMs": 2.9833999999973457
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.snellen20",
+            "expected": 500,
+            "obtained": 500,
+            "tolerance": 0.005,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.logmar",
+            "expected": 1.398,
+            "obtained": 1.3979400086720375,
+            "tolerance": 0.005,
+            "difference": 0.00005999132796241646,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dec",
+            "expected": 0.04,
+            "obtained": 0.04,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.logmar",
+            "expected": 1.3979400086720375,
+            "obtained": 1.3979400086720375,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.snellen20",
+            "expected": 500,
+            "obtained": 500,
+            "tolerance": 5e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1,40",
+            "obtained": "1,40",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "logMAR",
+            "obtained": "logMAR",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "conversao-de-acuidade-visual",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Snellen 20/3 (fora da faixa): erro",
+      "originalInput": {
+        "modo": "s20",
+        "valor": 3
+      },
+      "input": {
+        "modo": "s20",
+        "valor": 3
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000)."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "modo": "s20",
+            "valor": 3
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+          "startedAt": "2026-10-05T17:36:19.356Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000).",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "b1c385876ee75d9fa1f1f8edbcc24c779435cfd831149cfc78fba897580cfbbb",
+          "bytes": 100,
+          "elapsedMs": 4.7664999999979045
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/conversao-de-acuidade-visual/calculate",
+        "startedAt": "2026-10-05T17:36:19.356Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000).",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "b1c385876ee75d9fa1f1f8edbcc24c779435cfd831149cfc78fba897580cfbbb",
+        "bytes": 100,
+        "elapsedMs": 4.7664999999979045
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000).",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
