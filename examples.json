@@ -1,6 +1,13 @@
 [
   {
-    "label": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+    "id": "conversao-de-acuidade-visual",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+    "originalInput": {
+      "modo": "s20",
+      "valor": 40
+    },
     "input": {
       "modo": "s20",
       "valor": 40
@@ -13,14 +20,36 @@
       "level": "low",
       "tol": 0.005
     },
-    "originalInput": {
-      "modo": "s20",
-      "valor": 40
+    "recordedResult": {
+      "main": [
+        "0,30",
+        "logMAR"
+      ],
+      "label": "Acuidade visual",
+      "raw": {
+        "dec": 0.5,
+        "logmar": 0.3010299956639812,
+        "snellen20": 40
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+    "id": "conversao-de-acuidade-visual",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+    "originalInput": {
+      "modo": "s6",
+      "valor": 60
+    },
     "input": {
       "modo": "s6",
       "valor": 60
@@ -33,14 +62,36 @@
       "level": "mid",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "modo": "s6",
-      "valor": 60
+    "recordedResult": {
+      "main": [
+        "1,00",
+        "logMAR"
+      ],
+      "label": "Acuidade visual",
+      "raw": {
+        "dec": 0.1,
+        "logmar": 1,
+        "snellen20": 200
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "logMAR 0 = decimal 1,0 = 20/20",
+    "id": "conversao-de-acuidade-visual",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "logMAR 0 = decimal 1,0 = 20/20",
+    "originalInput": {
+      "modo": "log",
+      "valor": 0
+    },
     "input": {
       "modo": "log",
       "valor": 0
@@ -52,14 +103,36 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "modo": "log",
-      "valor": 0
+    "recordedResult": {
+      "main": [
+        "-0,00",
+        "logMAR"
+      ],
+      "label": "Acuidade visual",
+      "raw": {
+        "dec": 1,
+        "logmar": 0,
+        "snellen20": 20
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Decimal 0,04 = 20/500: cegueira",
+    "id": "conversao-de-acuidade-visual",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Decimal 0,04 = 20/500: cegueira",
+    "originalInput": {
+      "modo": "dec",
+      "valor": 0.04
+    },
     "input": {
       "modo": "dec",
       "valor": 0.04
@@ -73,14 +146,36 @@
       "verdict": "cegueira",
       "tol": 0.005
     },
-    "originalInput": {
-      "modo": "dec",
-      "valor": 0.04
+    "recordedResult": {
+      "main": [
+        "1,40",
+        "logMAR"
+      ],
+      "label": "Acuidade visual",
+      "raw": {
+        "dec": 0.04,
+        "logmar": 1.3979400086720375,
+        "snellen20": 500
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Snellen 20/3 (fora da faixa): erro",
+    "id": "conversao-de-acuidade-visual",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Snellen 20/3 (fora da faixa): erro",
+    "originalInput": {
+      "modo": "s20",
+      "valor": 3
+    },
     "input": {
       "modo": "s20",
       "valor": 3
@@ -88,10 +183,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "modo": "s20",
-      "valor": 3
+    "recordedResult": {
+      "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000)."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

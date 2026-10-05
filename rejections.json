@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field modo",
+    "input": {
+      "valor": 40
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "modo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field modo",
+    "input": {
+      "modo": "",
+      "valor": 40
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "modo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option modo",
+    "input": {
+      "modo": "__ELUCENIA_INVALID_OPTION__",
+      "valor": 40
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "modo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field valor",
+    "input": {
+      "modo": "s20"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field valor",
+    "input": {
+      "modo": "s20",
+      "valor": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" valor",
+    "input": {
+      "modo": "s20",
+      "valor": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" valor",
+    "input": {
+      "modo": "s20",
+      "valor": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" valor",
+    "input": {
+      "modo": "s20",
+      "valor": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" valor",
+    "input": {
+      "modo": "s20",
+      "valor": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} valor",
+    "input": {
+      "modo": "s20",
+      "valor": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true valor",
+    "input": {
+      "modo": "s20",
+      "valor": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum valor",
+    "input": {
+      "modo": "s20",
+      "valor": -1.4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum valor",
+    "input": {
+      "modo": "s20",
+      "valor": 2200
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "valor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

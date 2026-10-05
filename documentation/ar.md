@@ -1,0 +1,74 @@
+<!-- ELUCENIA technical documentation · conversao-de-acuidade-visual · ar · no clinical/professional/rights approval -->
+
+# تحويل حدة البصر
+
+[الشروط والمصادر والأذونات](https://elucenia.org/ar/tools/conversao-de-acuidade-visual)
+
+## كيفية الاستخدام
+
+استخدم الأداة في البوابة أو افتح index.html عبر خادم HTTP محلي. اختر اللغة، وأكمل الحقول، ثم أجرِ الحساب.
+
+## المدخلات والوحدات
+
+### طريقة تدوين القيمة
+
+`modo`
+
+- `s20` — Snellen ٢٠/x (قدم)
+- `s6` — Snellen ٦/x (متر)
+- `dec` — عشري
+- `log` — logMAR
+
+### القيمة (في Snellen، المقام فقط)
+
+`valor`
+
+النطاق: ؜-٠٫٤–٢٠٠٠
+
+## إصدار الطريقة
+
+تحويل سنيلين/العشري/logMAR؛ ETDRS 1982: 0.02 لكل حرف؛ اصطلاحات هولاداي 2004
+
+## المعادلة الموثقة
+
+العشري = بسط سنيلين ÷ مقامه (20/40 = 0.5). logMAR = −log10(العشري) = log10(MAR), حيث MAR هو زاوية التمييز الدنيا بالدقائق القوسية. كل سطر في لوحة ETDRS يساوي 0.1 logMAR (5 حروف، لكل منها 0.02).
+
+## الحدود والفئة السكانية
+
+يتطلب التحويل كسر Snellen موجبًا ويحافظ على القياس الأصلي؛ ولا يُجري فحصًا جديدًا. قارن النتائج مع توثيق المسافة والعين والتصحيح البصري ولوحة الفحص. تتوافق الزيادة بمقدار ٠٫١ logMAR لكل سطر و٠٫٠٢ لكل حرف مع بنية ETDRS، وليس مع كل لوحة. يوصي Holladay 2004 بحساب المتوسطات في logMAR، لا بالمتوسط الحسابي لكسور Snellen. يعتمد عد الأصابع وإدراك حركة اليد على المسافة، ولا ينبغي إعطاؤهما مكافئات عشرية ثابتة بواسطة هذا التحويل.
+
+## المراجع
+
+- [Holladay JT. Visual acuity measurements. J Cataract Refract Surg, 2004.](https://doi.org/10.1016/j.jcrs.2004.01.014)
+
+- [Ferris FL et al. New visual acuity charts for clinical research. Am J Ophthalmol, 1982.](https://doi.org/10.1016/0002-9394(82)90197-0)
+
+- [Organização Mundial da Saúde. Blindness and vision impairment (fact sheet).](https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment)
+
+- [Holladay2004,JCRS30:287–290](https://www.hicsoap.com/__static/03b5dccbd2b603d4d234479004ca5de4/097-visual-acuity-measurements-jcrs-2004-_in-3426.pdf?dl=1)
+
+## إعادة إجراء الاختبارات التقنية
+
+شغّل node test.cjs في المجلد الجذري لهذا المستودع لتكرار الحالات الاصطناعية المسجلة. تُحفظ المدخلات والنتائج المتوقعة وحدود التفاوت الأصلية. لا تُعدّ الاختبارات التقنية تحققًا سريريًا.
+
+```sh
+node test.cjs
+```
+
+يحتوي tool.json على المصادر والإصدار ونطاق المراجعة. يحتفظ examples.json بالمدخلات والنتائج المتوقعة للحالات الاصطناعية؛ ويسجل results.json النتائج التي تم الحصول عليها.
+
+[السجل والمراجع](../tool.json) · [شيفرة JavaScript](../calculator.js) · [حالات مرجعية](../examples.json) · [results.json](../results.json)
+
+## المراجعة وشروط الاستخدام
+
+لم تُجرَ مراجعة سريرية مستقلة.
+
+هذه الواجهة ترجمة أعدّها مؤلفوها، وليست إصدارًا رسميًا أو معتمدًا. لم تُجرَ مراجعة سريرية مستقلة أو مراجعة لغوية مهنية، ولم تُستكمل الموافقة على حقوق استخدام الأدوات.
+
+نتيجة المعادلة أو التصنيف. يعتمد التفسير والتصرف ومدى الانطباق على التقييم المهني والمصدر المحدد.
+
+## الترخيص ونسبة العمل إلى أصحابه
+
+ينطبق Apache-2.0 على كود ELUCENIA فقط. تبقى حقوق الأدوات والمنشورات والترجمات والبيانات لأصحابها المعنيين. احتفظ بملفّي LICENSE وNOTICE.
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

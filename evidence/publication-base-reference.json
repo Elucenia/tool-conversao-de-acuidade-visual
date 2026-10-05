@@ -1,0 +1,88 @@
+{
+  "id": "conversao-de-acuidade-visual",
+  "repository": "Elucenia/tool-conversao-de-acuidade-visual",
+  "branch": "main",
+  "commit": "5e9a7f300faa63820710fc0b6b05da90197e1ae6",
+  "archiveSha256": "ed518dc6834468cb13147689d5f77bd32369729545577bf8f5ea83a9e4e78501",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3343,
+      "sha": "e2e0faa9a195baa6bd602b611be56fc0ac58e0fc",
+      "sha256": "1ca1a2d55789aac8269fde21c68ed4bc385b8da105f1685cd45b5044da72a504"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 947,
+      "sha": "5563ea030c9f31eeb8f7a480bb5a5aab68540e98",
+      "sha256": "db78a08bf664dc69e22245416d585832a70a928b0d2f18316b608b25b601379c"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1479,
+      "sha": "b3bb3d9174a56253e2f9f9427a835d782deb8c27",
+      "sha256": "a06fa5ca0f81ed3e82bdc53a76a65141935ff8d1c8daf71dc19daf868e4ea2f4"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1666,
+      "sha": "e65a9a1802bb93e29eeb1e62fe0193dbbb7d7f4b",
+      "sha256": "20794e75ef3ecb739b88580a2461df034166dd0b8deadf89345e2ffcf13f7f46"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}
