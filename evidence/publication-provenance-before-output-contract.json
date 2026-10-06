@@ -1,0 +1,332 @@
+{
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
+  "id": "conversao-de-acuidade-visual",
+  "repository": "Elucenia/tool-conversao-de-acuidade-visual",
+  "remoteBase": {
+    "id": "conversao-de-acuidade-visual",
+    "repository": "Elucenia/tool-conversao-de-acuidade-visual",
+    "branch": "main",
+    "commit": "5e9a7f300faa63820710fc0b6b05da90197e1ae6",
+    "archiveSha256": "ed518dc6834468cb13147689d5f77bd32369729545577bf8f5ea83a9e4e78501",
+    "protectedFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3343,
+        "sha": "e2e0faa9a195baa6bd602b611be56fc0ac58e0fc",
+        "sha256": "1ca1a2d55789aac8269fde21c68ed4bc385b8da105f1685cd45b5044da72a504"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 947,
+        "sha": "5563ea030c9f31eeb8f7a480bb5a5aab68540e98",
+        "sha256": "db78a08bf664dc69e22245416d585832a70a928b0d2f18316b608b25b601379c"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1479,
+        "sha": "b3bb3d9174a56253e2f9f9427a835d782deb8c27",
+        "sha256": "a06fa5ca0f81ed3e82bdc53a76a65141935ff8d1c8daf71dc19daf868e4ea2f4"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1666,
+        "sha": "e65a9a1802bb93e29eeb1e62fe0193dbbb7d7f4b",
+        "sha256": "20794e75ef3ecb739b88580a2461df034166dd0b8deadf89345e2ffcf13f7f46"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "receipt": {
+      "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+      "bytes": 6066154,
+      "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+    },
+    "remoteCodeExecuted": false,
+    "freshBranchReadRequiredBeforePublication": true
+  },
+  "priorAuthorialStandalone": {
+    "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+    "bytes": 6823260,
+    "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/conversao-de-acuidade-visual/calculator.js",
+    "bytes": 5515,
+    "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+  },
+  "browserAdapterIdentical": true,
+  "methodVersion": "Conversão Snellen/decimal/log MAR; ETDRS 1982 0,02 porletra; Holladay 2004 convenções",
+  "implementationVersion": "conversao-de-acuidade-visual@native-2026-10-03+55aab09a11bf",
+  "locales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "bytes": 13601911,
+      "sha256": "347c306e9e588d9bff853ab948f100b2ce00d7adb88efb821e39c2799deb1806"
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "bytes": 13681895,
+      "sha256": "e14119d6179a16e4af0998cb86cd7332e72eccae8a8257000b4ea940a5919f2b"
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "bytes": 13727824,
+      "sha256": "52dce27b11b7d4bd0b0e599e66e24beb802f99068554f76c34ef81c98d7e164f"
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "bytes": 13775177,
+      "sha256": "e4ffcf4c7a5378bb9527a544548c6d8364aa309ea38f567359f8f198eee6c7c9"
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "bytes": 13749397,
+      "sha256": "c92817a3fa8412a4f878061d3ac1c56be6d114aae1c3232c25f79c6ce7d597f4"
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "bytes": 13726317,
+      "sha256": "5c7c142087de8016a75759669a7271a9048d9544b1a1383c626fafa7be0ece39"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "bytes": 13962469,
+      "sha256": "c3a3cf978eeac700c01847f49bc4dd12759499a6973fa36733bc290786f9246d"
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "bytes": 13590420,
+      "sha256": "eb2c7d8d5b980d6d43e44bcc135bcde31565fab0290bf595f84975dec6fb294e"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "bytes": 13729894,
+      "sha256": "eb524f45c7e9ce0fc3e951b159c102294d6702a1858a1f43f7e920c69fa1a290"
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "bytes": 14418664,
+      "sha256": "fe93d7fc31e91ed8c9d3acee80261a2f8ad74b77c86e6e28f9b4cadf5d9f048f"
+    }
+  ],
+  "referenceBank": {
+    "file": "reports/review-20261003/source-cases-audit.json",
+    "bytes": 885399,
+    "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+  },
+  "comparisonProgram": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "bytes": 20735,
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa"
+  },
+  "sourceNodeParityPassed": true,
+  "browserVmParityPassed": true,
+  "actualBrowserDomVerified": false,
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 33117,
+    "sha256": "6e466fc88cfa49b343fb318952a8c55ceb1d17eec3007df7eb90db3ac24fd6ff",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/conversao-de-acuidade-visual/calculator.js",
+      "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744",
+      "bytes": 5515
+    },
+    "cases": 5,
+    "status": "passed"
+  },
+  "rights": {
+    "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
+    "sourceAdapter": {
+      "file": "apps/website/private/tool-code/conversao-de-acuidade-visual/calculator.js",
+      "bytes": 5515,
+      "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+    },
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/conversao-de-acuidade-visual/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/conversao-de-acuidade-visual/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedRemoteFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3343,
+        "sha": "e2e0faa9a195baa6bd602b611be56fc0ac58e0fc",
+        "sha256": "1ca1a2d55789aac8269fde21c68ed4bc385b8da105f1685cd45b5044da72a504"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 947,
+        "sha": "5563ea030c9f31eeb8f7a480bb5a5aab68540e98",
+        "sha256": "db78a08bf664dc69e22245416d585832a70a928b0d2f18316b608b25b601379c"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1479,
+        "sha": "b3bb3d9174a56253e2f9f9427a835d782deb8c27",
+        "sha256": "a06fa5ca0f81ed3e82bdc53a76a65141935ff8d1c8daf71dc19daf868e4ea2f4"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1666,
+        "sha": "e65a9a1802bb93e29eeb1e62fe0193dbbb7d7f4b",
+        "sha256": "20794e75ef3ecb739b88580a2461df034166dd0b8deadf89345e2ffcf13f7f46"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "sourceMaterialScope": "Published mathematical/Boolean method implemented in ELUCENIA code; source-specific clinical descriptions and questionnaire expression remain separate from code ownership/licensing",
+    "scientificSources": [
+      [
+        "Holladay JT. Visual acuity measurements. J Cataract Refract Surg, 2004.",
+        "https://doi.org/10.1016/j.jcrs.2004.01.014"
+      ],
+      [
+        "Ferris FL et al. New visual acuity charts for clinical research. Am J Ophthalmol, 1982.",
+        "https://doi.org/10.1016/0002-9394(82)90197-0"
+      ],
+      [
+        "Organização Mundial da Saúde. Blindness and vision impairment (fact sheet).",
+        "https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"
+      ],
+      [
+        "Holladay2004,JCRS30:287–290",
+        "https://www.hicsoap.com/__static/03b5dccbd2b603d4d234479004ca5de4/097-visual-acuity-measurements-jcrs-2004-_in-3426.pdf?dl=1"
+      ]
+    ],
+    "methodVersion": "Conversão Snellen/decimal/log MAR; ETDRS 1982 0,02 porletra; Holladay 2004 convenções",
+    "grantRecordedInNotice": true,
+    "thirdPartyInstrumentRightsApproval": "not-performed",
+    "wholeInstrumentApproval": false,
+    "professionalTranslationApproval": false,
+    "clinicalApproval": false,
+    "remainingScopeReview": "Check source-specific wording, questionnaire/instrument and translation conditions before treating the complete mixed bundle as cleared; no grant is inferred from public accessibility or code licence"
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "externalPublicationReady": false,
+  "publicationPerformed": false,
+  "appWrites": false,
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
+}

@@ -72,3 +72,51 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Sin deficiencia visual (6/12 o mejor), si corresponde al mejor ojo
+
+| Detalles del resultado | |
+| --- | --- |
+| Decimal | 0,50 |
+| Snellen (pies) | 20/40 |
+| Snellen (metros) | 6/12,0 |
+
+
+### 2
+
+Deficiencia visual moderada (peor que 6/18 hasta 6/60), si corresponde al mejor ojo
+
+| Detalles del resultado | |
+| --- | --- |
+| Decimal | 0,10 |
+| Snellen (pies) | 20/200 |
+| Snellen (metros) | 6/60,0 |
+
+
+### 3
+
+Sin deficiencia visual (6/12 o mejor), si corresponde al mejor ojo
+
+| Detalles del resultado | |
+| --- | --- |
+| Decimal | 1,00 |
+| Snellen (pies) | 20/20 |
+| Snellen (metros) | 6/6,0 |
+
+
+### 4
+
+Ceguera (peor que 3/60), si corresponde al mejor ojo
+
+| Detalles del resultado | |
+| --- | --- |
+| Decimal | 0,04 |
+| Snellen (pies) | 20/500 |
+| Snellen (metros) | 6/150,0 |
+

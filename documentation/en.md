@@ -72,3 +72,51 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No visual impairment (6/12 or better), if for the better eye
+
+| Result details | |
+| --- | --- |
+| Decimal | 0.50 |
+| Snellen (feet) | 20/40 |
+| Snellen (meters) | 6/12.0 |
+
+
+### 2
+
+Moderate visual impairment (worse than 6/18 up to 6/60), if for the better eye
+
+| Result details | |
+| --- | --- |
+| Decimal | 0.10 |
+| Snellen (feet) | 20/200 |
+| Snellen (meters) | 6/60.0 |
+
+
+### 3
+
+No visual impairment (6/12 or better), if for the better eye
+
+| Result details | |
+| --- | --- |
+| Decimal | 1.00 |
+| Snellen (feet) | 20/20 |
+| Snellen (meters) | 6/6.0 |
+
+
+### 4
+
+Blindness (worse than 3/60), if for the better eye
+
+| Result details | |
+| --- | --- |
+| Decimal | 0.04 |
+| Snellen (feet) | 20/500 |
+| Snellen (meters) | 6/150.0 |
+

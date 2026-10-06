@@ -1,0 +1,2503 @@
+{
+  "id": "conversao-de-acuidade-visual",
+  "implementationVersion": "conversao-de-acuidade-visual@native-2026-10-05+3d8f421d32e0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,50",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pés)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6/12,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem deficiência visual (6/12 ou melhor), se for a do melhor olho",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,10",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pés)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6/60,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Deficiência visual moderada (pior que 6/18 até 6/60), se for a do melhor olho",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,00",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pés)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6/6,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sem deficiência visual (6/12 ou melhor), se for a do melhor olho",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,04",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pés)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6/150,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Cegueira (pior que 3/60), se for a do melhor olho",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "en",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.50",
+                "locale": "en",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (feet)",
+                "locale": "en",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (meters)",
+                "locale": "en",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12.0",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No visual impairment (6/12 or better), if for the better eye",
+            "locale": "en",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "en",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.10",
+                "locale": "en",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (feet)",
+                "locale": "en",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (meters)",
+                "locale": "en",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60.0",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate visual impairment (worse than 6/18 up to 6/60), if for the better eye",
+            "locale": "en",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "en",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1.00",
+                "locale": "en",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (feet)",
+                "locale": "en",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (meters)",
+                "locale": "en",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6.0",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "No visual impairment (6/12 or better), if for the better eye",
+            "locale": "en",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "en",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.04",
+                "locale": "en",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (feet)",
+                "locale": "en",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (meters)",
+                "locale": "en",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150.0",
+                "locale": "en",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Blindness (worse than 3/60), if for the better eye",
+            "locale": "en",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "es",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,50",
+                "locale": "es",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pies)",
+                "locale": "es",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "es",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12,0",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sin deficiencia visual (6/12 o mejor), si corresponde al mejor ojo",
+            "locale": "es",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "es",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,10",
+                "locale": "es",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pies)",
+                "locale": "es",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "es",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60,0",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Deficiencia visual moderada (peor que 6/18 hasta 6/60), si corresponde al mejor ojo",
+            "locale": "es",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "es",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1,00",
+                "locale": "es",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pies)",
+                "locale": "es",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "es",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6,0",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sin deficiencia visual (6/12 o mejor), si corresponde al mejor ojo",
+            "locale": "es",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimal",
+                "locale": "es",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,04",
+                "locale": "es",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pies)",
+                "locale": "es",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metros)",
+                "locale": "es",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150,0",
+                "locale": "es",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ceguera (peor que 3/60), si corresponde al mejor ojo",
+            "locale": "es",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décimal",
+                "locale": "fr",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,50",
+                "locale": "fr",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pieds)",
+                "locale": "fr",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (mètres)",
+                "locale": "fr",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12,0",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sans déficience visuelle (6/12 ou mieux), s’il s’agit de l’œil le mieux voyant",
+            "locale": "fr",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décimal",
+                "locale": "fr",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,10",
+                "locale": "fr",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pieds)",
+                "locale": "fr",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (mètres)",
+                "locale": "fr",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60,0",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Déficience visuelle modérée (pire que 6/18 jusqu’à 6/60), s’il s’agit de l’œil le mieux voyant",
+            "locale": "fr",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décimal",
+                "locale": "fr",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1,00",
+                "locale": "fr",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pieds)",
+                "locale": "fr",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (mètres)",
+                "locale": "fr",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6,0",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sans déficience visuelle (6/12 ou mieux), s’il s’agit de l’œil le mieux voyant",
+            "locale": "fr",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Décimal",
+                "locale": "fr",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,04",
+                "locale": "fr",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (pieds)",
+                "locale": "fr",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (mètres)",
+                "locale": "fr",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150,0",
+                "locale": "fr",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Cécité (pire que 3/60), s’il s’agit de l’œil le mieux voyant",
+            "locale": "fr",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dezimal",
+                "locale": "de",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,50",
+                "locale": "de",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (Fuß)",
+                "locale": "de",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (Meter)",
+                "locale": "de",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12,0",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine Sehbeeinträchtigung (6/12 oder besser), sofern es sich um das bessere Auge handelt",
+            "locale": "de",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dezimal",
+                "locale": "de",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,10",
+                "locale": "de",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (Fuß)",
+                "locale": "de",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (Meter)",
+                "locale": "de",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60,0",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mäßige Sehbeeinträchtigung (schlechter als 6/18 bis 6/60), sofern es sich um das bessere Auge handelt",
+            "locale": "de",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dezimal",
+                "locale": "de",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1,00",
+                "locale": "de",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (Fuß)",
+                "locale": "de",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (Meter)",
+                "locale": "de",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6,0",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Keine Sehbeeinträchtigung (6/12 oder besser), sofern es sich um das bessere Auge handelt",
+            "locale": "de",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Dezimal",
+                "locale": "de",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,04",
+                "locale": "de",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (Fuß)",
+                "locale": "de",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (Meter)",
+                "locale": "de",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150,0",
+                "locale": "de",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Blindheit (schlechter als 3/60), sofern es sich um das bessere Auge handelt",
+            "locale": "de",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimale",
+                "locale": "it",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,50",
+                "locale": "it",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (piedi)",
+                "locale": "it",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metri)",
+                "locale": "it",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12,0",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessuna disabilità visiva (6/12 o migliore), se riferita all’occhio migliore",
+            "locale": "it",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimale",
+                "locale": "it",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,10",
+                "locale": "it",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (piedi)",
+                "locale": "it",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metri)",
+                "locale": "it",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60,0",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Disabilità visiva moderata (peggiore di 6/18 fino a 6/60), se riferita all’occhio migliore",
+            "locale": "it",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimale",
+                "locale": "it",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1,00",
+                "locale": "it",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (piedi)",
+                "locale": "it",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metri)",
+                "locale": "it",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6,0",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nessuna disabilità visiva (6/12 o migliore), se riferita all’occhio migliore",
+            "locale": "it",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Decimale",
+                "locale": "it",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0,04",
+                "locale": "it",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (piedi)",
+                "locale": "it",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (metri)",
+                "locale": "it",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150,0",
+                "locale": "it",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Cecità (peggiore di 3/60), se riferita all’occhio migliore",
+            "locale": "it",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عشري",
+                "locale": "ar",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "٠٫٥٠",
+                "locale": "ar",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سنلن (قدم)",
+                "locale": "ar",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "٢٠/٤٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "سنلن (أمتار)",
+                "locale": "ar",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "٦/١٢٫٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد إعاقة بصرية (6/12 أو أفضل)، إذا كانت للعين الأفضل",
+            "locale": "ar",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عشري",
+                "locale": "ar",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "٠٫١٠",
+                "locale": "ar",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سنلن (قدم)",
+                "locale": "ar",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "٢٠/٢٠٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "سنلن (أمتار)",
+                "locale": "ar",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "٦/٦٠٫٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "إعاقة بصرية متوسطة (أسوأ من 6/18 حتى 6/60)، إذا كانت للعين الأفضل",
+            "locale": "ar",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عشري",
+                "locale": "ar",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "١٫٠٠",
+                "locale": "ar",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سنلن (قدم)",
+                "locale": "ar",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "٢٠/٢٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "سنلن (أمتار)",
+                "locale": "ar",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "٦/٦٫٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لا توجد إعاقة بصرية (6/12 أو أفضل)، إذا كانت للعين الأفضل",
+            "locale": "ar",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عشري",
+                "locale": "ar",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "٠٫٠٤",
+                "locale": "ar",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "سنلن (قدم)",
+                "locale": "ar",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "٢٠/٥٠٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "سنلن (أمتار)",
+                "locale": "ar",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "٦/١٥٠٫٠",
+                "locale": "ar",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "العمى (أسوأ من 3/60)، إذا كانت للعين الأفضل",
+            "locale": "ar",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "zh",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.50",
+                "locale": "zh",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（英尺）",
+                "locale": "zh",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（米）",
+                "locale": "zh",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12.0",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无视力障碍（6/12或更好），如果是最佳眼",
+            "locale": "zh",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "zh",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.10",
+                "locale": "zh",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（英尺）",
+                "locale": "zh",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（米）",
+                "locale": "zh",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60.0",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度视力障碍（差于6/18至6/60），如果是最佳眼",
+            "locale": "zh",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "zh",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1.00",
+                "locale": "zh",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（英尺）",
+                "locale": "zh",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（米）",
+                "locale": "zh",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6.0",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "无视力障碍（6/12或更好），如果是最佳眼",
+            "locale": "zh",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "zh",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.04",
+                "locale": "zh",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（英尺）",
+                "locale": "zh",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（米）",
+                "locale": "zh",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150.0",
+                "locale": "zh",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "失明（差于3/60），如果是最佳眼",
+            "locale": "zh",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "ja",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.50",
+                "locale": "ja",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（フィート）",
+                "locale": "ja",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（メートル）",
+                "locale": "ja",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12.0",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "視覚障害なし（6/12以上）、最良視力眼の場合",
+            "locale": "ja",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "ja",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.10",
+                "locale": "ja",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（フィート）",
+                "locale": "ja",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（メートル）",
+                "locale": "ja",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60.0",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度視覚障害（6/18より悪く6/60まで）、最良視力眼の場合",
+            "locale": "ja",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "ja",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1.00",
+                "locale": "ja",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（フィート）",
+                "locale": "ja",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（メートル）",
+                "locale": "ja",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6.0",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "視覚障害なし（6/12以上）、最良視力眼の場合",
+            "locale": "ja",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "小数",
+                "locale": "ja",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.04",
+                "locale": "ja",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen（フィート）",
+                "locale": "ja",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen（メートル）",
+                "locale": "ja",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150.0",
+                "locale": "ja",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "失明（3/60より悪い）、最良視力眼の場合",
+            "locale": "ja",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दशमलव",
+                "locale": "hi",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.50",
+                "locale": "hi",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (फीट)",
+                "locale": "hi",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/40",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (मीटर)",
+                "locale": "hi",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/12.0",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "यदि बेहतर आंख के लिए हो तो कोई दृष्टि दोष नहीं (6/12 या बेहतर)",
+            "locale": "hi",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दशमलव",
+                "locale": "hi",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.10",
+                "locale": "hi",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (फीट)",
+                "locale": "hi",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/200",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  200
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (मीटर)",
+                "locale": "hi",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/60.0",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  60
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम दृष्टि दोष (6/18 से खराब से लेकर 6/60 तक), यदि बेहतर आंख के लिए हो",
+            "locale": "hi",
+            "template": "documented-authored-748cab52cb0117f1461f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "logMAR 0 = decimal 1,0 = 20/20",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दशमलव",
+                "locale": "hi",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "1.00",
+                "locale": "hi",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (फीट)",
+                "locale": "hi",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/20",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  20
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (मीटर)",
+                "locale": "hi",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/6.0",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "यदि बेहतर आंख के लिए हो तो कोई दृष्टि दोष नहीं (6/12 या बेहतर)",
+            "locale": "hi",
+            "template": "documented-authored-4f0344feb8f03aeed6d4"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Decimal 0,04 = 20/500: cegueira",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दशमलव",
+                "locale": "hi",
+                "template": "documented-authored-4ba9739640982e35a31c"
+              },
+              "value": {
+                "text": "0.04",
+                "locale": "hi",
+                "template": "documented-authored-9442e36ee185fc1f4779",
+                "sourceNumbers": [
+                  0.04
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Snellen (फीट)",
+                "locale": "hi",
+                "template": "documented-authored-32731256695aac48d494"
+              },
+              "value": {
+                "text": "20/500",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  20,
+                  500
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Snellen (मीटर)",
+                "locale": "hi",
+                "template": "documented-authored-2c6d47a14c8af400c419"
+              },
+              "value": {
+                "text": "6/150.0",
+                "locale": "hi",
+                "template": "documented-authored-ac9e9556b7bb0bb5cd94",
+                "sourceNumbers": [
+                  6,
+                  150
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अंधता (3/60 से खराब), यदि बेहतर आंख के लिए हो",
+            "locale": "hi",
+            "template": "documented-authored-4bbc44737f26ab089cf2"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "conversao-de-acuidade-visual",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5515,
-      "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+      "bytes": 5720,
+      "sha256": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1121,
-      "sha256": "0ee9c45191789b6428939f709d317ad11bc07e3a85c4c31facdf1e8bb43d3a9d"
+      "bytes": 1390,
+      "sha256": "76ee5b1173b2791952773a184787fe522fbdbf8359665e712057c9d70b84ab6b"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4435,
-      "sha256": "c4354878ed47081674aa4561941ccebc5d8473ca95b9b0a98566ef6f1a817726"
+      "bytes": 5656,
+      "sha256": "fbcc31b1fc3885b49dcf9e63ac8054d41dca77cd51cd56523d565d7e204b6bc9"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3801,
-      "sha256": "b2565c43e80788323623be1c58a995f0c0c5f5baac8549dd2b0222a09663047e"
+      "bytes": 4821,
+      "sha256": "37de5712bddc1d0b4b51d783794d025415219fd0a218a14db09b734a8dbf42d9"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3396,
-      "sha256": "f80b8d72bf5f69b010ef65d95af056b68b3b02370eb31cecd7bbb157ad2e9173"
+      "bytes": 4289,
+      "sha256": "22bd8418ea5fa162bb1cba170c4c52a0c2fb2bac4f48bd6f597dbbef3a77030a"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3673,
-      "sha256": "caf7864e4f2833b3a264e1a87d5c44af9c18832410b2c890613ea238f1a713bd"
+      "bytes": 4631,
+      "sha256": "1fc0f198913760f9db6d3176b2ff06a88dcef989698da244b35522f7122d5cc3"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3880,
-      "sha256": "6b43aeadf339200ee000266e08662fd5130f63aadf6eef94cc02f2fed8302b73"
+      "bytes": 4949,
+      "sha256": "7af319ac7333532385ae8ef67273a0af918a80c0058a71f800605f2b111f0968"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6121,
-      "sha256": "16d8afba15983748387e06121bd5d4cfed90326688300ba4ea0d1fb090d106ab"
+      "bytes": 7724,
+      "sha256": "d8b4abc027453e78cd60ed4c013e4e7aea16045f4eb70aa23c1cc923cf88353d"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3631,
-      "sha256": "01a06d3dba80e5e393acf65713c9d0188c06c1ef09421e2a28ef8091d839e93e"
+      "bytes": 4632,
+      "sha256": "c0361eba3ca2c9aa8a1561b97c6ed54d1ba3d399b3ca8c8b88219789f265eef2"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3807,
-      "sha256": "46722b697656ad0d5eac58d8396882c27006e5444d956f6baf1531f80ab07658"
+      "bytes": 4815,
+      "sha256": "6ce4d8d68982f9112ded9a2e3c72e48dfd5a3b65354a9a0442ed9966f4527de1"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3497,
-      "sha256": "8eea03b52f063ea4c498c8940bed88ee4181ae027ef334c0e0dc89200e2068e2"
+      "bytes": 4436,
+      "sha256": "3ac6ff237c635f77293f42090e25cdd826f8e47b1ea80d4cde40e401ae67fb6a"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3044,
-      "sha256": "7963943b0c9ea3bc4565a76c02cfb10940242ff6b5425051ae8733aa7b083a82"
+      "bytes": 3869,
+      "sha256": "d8b7fcb533079b1739f8756bf68f6b25877a52ccba219246268d3dc06f037cb1"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 77466,
+      "sha256": "29105871b507b90d8072450eef59d4e22dcf889e90add3884addf9ec29c78641"
     },
     {
       "path": "engine/tool-code/conversao-de-acuidade-visual/calculator.js",
-      "bytes": 5515,
-      "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+      "bytes": 5720,
+      "sha256": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2833,
       "sha256": "7de8689c6d6b1f2c3578ec6c04051414d2670be3bc0bf2d7c05fa7ff6c7f04cf"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12330,
+      "sha256": "e7ca1c840c82993e9dfdbda02dccab1f873a4bd361ce2f04be92050869bc6c0f"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 44844,
-      "sha256": "3c59babedcb694f99c7ef7c566e644c8c15813c2c4a8a4bcdd40e76fd4bc6811"
+      "bytes": 64164,
+      "sha256": "6d08276a8e2795decae5e16ca3af01217db20f21c2df3a73b3df0d02673cfdce"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 399,
-      "sha256": "1c416d4e2fc2f94a59c4c902035b02fde3e23d1a67d9ca653fb5f409d1c2f0bf"
+      "bytes": 493,
+      "sha256": "01cb34afed4b3cc0a88db4f5867896b1bf05d8a88f9aa513c2c3cbb251791cad"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12330,
-      "sha256": "e7ca1c840c82993e9dfdbda02dccab1f873a4bd361ce2f04be92050869bc6c0f"
+      "bytes": 6416,
+      "sha256": "f7e43513d8a7066331e880818429202fafa02844fa86a3fafdbc5545b75436e5"
     },
     {
       "path": "README.md",
-      "bytes": 3239,
-      "sha256": "40a90b62a1b1363366b460402272e67c01ddbb88e5cc2f878224383947335afe"
+      "bytes": 3833,
+      "sha256": "8531b52d61e5e51a66469f227e3dab92fd738bfffb277cf3876c04c15a818f47"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 7881,
+      "sha256": "3d85c189eba176f6e1d2ebfd10396b913ef6332f51e084de81db3a0f9931ac7e"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1947,
       "sha256": "7a3d6d086d82dc919c40cc2492a49c00b70db61069960db111e27c80bc30f6c8"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 12024,
-      "sha256": "3d0023392f69cb29e0c134eccf72abfbd63bedf845d252d05420c12b4e04df25"
+      "bytes": 13551,
+      "sha256": "f753ed941ee4bd7e11766619b044d7a44ae7896eb7c445ba4af1316825fc4271"
     }
   ]
 }

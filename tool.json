@@ -146,7 +146,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Conversão Snellen/decimal/log MAR; ETDRS 1982 0,02 porletra; Holladay 2004 convenções",
-    "implementationVersion": "conversao-de-acuidade-visual@native-2026-10-03+55aab09a11bf",
+    "implementationVersion": "conversao-de-acuidade-visual@native-2026-10-05+3d8f421d32e0",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/15030802/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -252,7 +252,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+      "implementationHash": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "conversao-de-acuidade-visual@native-2026-10-03+55aab09a11bf",
+          "previousImplementationHash": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744",
+          "implementationHash": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6",
+          "scientificBodySha256": "dc4865181e60371eea46f4e25735cc3751a7b6083c15374507d52321452dbb53",
+          "metadataContractHash": "a76d6441bfb10487ac1b9e08ff9f3596b8282b24a16181aa67ecd9a67dfd1656",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A conversão exige uma fração de Snellen positiva e preserva a medida original; não realiza um novo exame. Compare resultados com distância, olho, correção óptica e tabela documentados. A progressão de 0,1 logMAR por linha e 0,02 por letra corresponde à estrutura ETDRS, não a qualquer tabela. Holladay 2004 orienta calcular médias em logMAR, não pela média aritmética das frações de Snellen. Contar dedos e movimento de mãos dependem da distância e não devem receber equivalências decimais fixas por esta conversão.",
     "limitsEvidence": {
@@ -282,15 +310,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/conversao-de-acuidade-visual/calculator.js",
-    "bytes": 5515,
-    "sha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744"
+    "bytes": 5720,
+    "sha256": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6"
   },
-  "sourceToolSha256": "c95bef5ed53374f55fe263faf925726f91634177a73b2ce7f4524948e4cc548c",
+  "sourceToolSha256": "96a83d616fa87aa6371ff43222ae8344a9eb639429a082a87fd292f3dd216a42",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "ae9c2e49f72300f2dd5bc7bc1818e09da13d5719352fa048fa0567f4d70c43f1",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,316 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "conversao-de-acuidade-visual",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "68cfc21a0605ac6fa39ecdb7e54afdefcb194657",
+    "oldEngineSha256": "55aab09a11bff1ce53178c9ca132822bf215f7c7962415309cbbfaf05a488744",
+    "currentEngineSha256": "3d8f421d32e0103f8b29e0281b0ae4e1b907026701a7d2e9840a82587f72e3c6"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Limite: 20/40 = decimal 0,5 = logMAR 0,30, sem deficiência",
+      "input": {
+        "modo": "s20",
+        "valor": 40
+      },
+      "publicOutput": {
+        "id": "conversao-de-acuidade-visual",
+        "main": [
+          "0,30",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.5,
+          "logmar": 0.3010299956639812,
+          "snellen20": 40
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "dec": 0.5,
+          "logmar": 0.301
+        },
+        "level": "low",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0,30",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "level": "low",
+        "verdict": "Sem deficiência visual (6/12 ou melhor), se for a do melhor olho",
+        "rows": [
+          [
+            "Decimal",
+            "0,50"
+          ],
+          [
+            "Snellen (pés)",
+            "20/40"
+          ],
+          [
+            "Snellen (metros)",
+            "6/12,0"
+          ]
+        ],
+        "raw": {
+          "dec": 0.5,
+          "logmar": 0.3010299956639812,
+          "snellen20": 40
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Limite: 6/60 = decimal 0,1 = logMAR 1,0, deficiência moderada",
+      "input": {
+        "modo": "s6",
+        "valor": 60
+      },
+      "publicOutput": {
+        "id": "conversao-de-acuidade-visual",
+        "main": [
+          "1,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.1,
+          "logmar": 1,
+          "snellen20": 200
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "dec": 0.1,
+          "logmar": 1
+        },
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "level": "mid",
+        "verdict": "Deficiência visual moderada (pior que 6/18 até 6/60), se for a do melhor olho",
+        "rows": [
+          [
+            "Decimal",
+            "0,10"
+          ],
+          [
+            "Snellen (pés)",
+            "20/200"
+          ],
+          [
+            "Snellen (metros)",
+            "6/60,0"
+          ]
+        ],
+        "raw": {
+          "dec": 0.1,
+          "logmar": 1,
+          "snellen20": 200
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "logMAR 0 = decimal 1,0 = 20/20",
+      "input": {
+        "modo": "log",
+        "valor": 0
+      },
+      "publicOutput": {
+        "id": "conversao-de-acuidade-visual",
+        "main": [
+          "-0,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 1,
+          "logmar": 0,
+          "snellen20": 20
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "dec": 1,
+          "snellen20": 20
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "-0,00",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "level": "low",
+        "verdict": "Sem deficiência visual (6/12 ou melhor), se for a do melhor olho",
+        "rows": [
+          [
+            "Decimal",
+            "1,00"
+          ],
+          [
+            "Snellen (pés)",
+            "20/20"
+          ],
+          [
+            "Snellen (metros)",
+            "6/6,0"
+          ]
+        ],
+        "raw": {
+          "dec": 1,
+          "logmar": 0,
+          "snellen20": 20
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Decimal 0,04 = 20/500: cegueira",
+      "input": {
+        "modo": "dec",
+        "valor": 0.04
+      },
+      "publicOutput": {
+        "id": "conversao-de-acuidade-visual",
+        "main": [
+          "1,40",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "raw": {
+          "dec": 0.04,
+          "logmar": 1.3979400086720375,
+          "snellen20": 500
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "snellen20": 500,
+          "logmar": 1.398
+        },
+        "level": "high",
+        "verdict": "cegueira",
+        "tol": 0.005
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,40",
+          "logMAR"
+        ],
+        "label": "Acuidade visual",
+        "level": "high",
+        "verdict": "Cegueira (pior que 3/60), se for a do melhor olho",
+        "rows": [
+          [
+            "Decimal",
+            "0,04"
+          ],
+          [
+            "Snellen (pés)",
+            "20/500"
+          ],
+          [
+            "Snellen (metros)",
+            "6/150,0"
+          ]
+        ],
+        "raw": {
+          "dec": 0.04,
+          "logmar": 1.3979400086720375,
+          "snellen20": 500
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Snellen 20/3 (fora da faixa): erro",
+      "input": {
+        "modo": "s20",
+        "valor": 3
+      },
+      "publicOutput": {
+        "error": "No Snellen em pés, informe o denominador de 20/x (de 5 a 2000).",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

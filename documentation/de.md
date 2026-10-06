@@ -72,3 +72,51 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Keine Sehbeeinträchtigung (6/12 oder besser), sofern es sich um das bessere Auge handelt
+
+| Ergebnisdetails | |
+| --- | --- |
+| Dezimal | 0,50 |
+| Snellen (Fuß) | 20/40 |
+| Snellen (Meter) | 6/12,0 |
+
+
+### 2
+
+Mäßige Sehbeeinträchtigung (schlechter als 6/18 bis 6/60), sofern es sich um das bessere Auge handelt
+
+| Ergebnisdetails | |
+| --- | --- |
+| Dezimal | 0,10 |
+| Snellen (Fuß) | 20/200 |
+| Snellen (Meter) | 6/60,0 |
+
+
+### 3
+
+Keine Sehbeeinträchtigung (6/12 oder besser), sofern es sich um das bessere Auge handelt
+
+| Ergebnisdetails | |
+| --- | --- |
+| Dezimal | 1,00 |
+| Snellen (Fuß) | 20/20 |
+| Snellen (Meter) | 6/6,0 |
+
+
+### 4
+
+Blindheit (schlechter als 3/60), sofern es sich um das bessere Auge handelt
+
+| Ergebnisdetails | |
+| --- | --- |
+| Dezimal | 0,04 |
+| Snellen (Fuß) | 20/500 |
+| Snellen (Meter) | 6/150,0 |
+

@@ -72,3 +72,51 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Sans déficience visuelle (6/12 ou mieux), s’il s’agit de l’œil le mieux voyant
+
+| Détails du résultat | |
+| --- | --- |
+| Décimal | 0,50 |
+| Snellen (pieds) | 20/40 |
+| Snellen (mètres) | 6/12,0 |
+
+
+### 2
+
+Déficience visuelle modérée (pire que 6/18 jusqu’à 6/60), s’il s’agit de l’œil le mieux voyant
+
+| Détails du résultat | |
+| --- | --- |
+| Décimal | 0,10 |
+| Snellen (pieds) | 20/200 |
+| Snellen (mètres) | 6/60,0 |
+
+
+### 3
+
+Sans déficience visuelle (6/12 ou mieux), s’il s’agit de l’œil le mieux voyant
+
+| Détails du résultat | |
+| --- | --- |
+| Décimal | 1,00 |
+| Snellen (pieds) | 20/20 |
+| Snellen (mètres) | 6/6,0 |
+
+
+### 4
+
+Cécité (pire que 3/60), s’il s’agit de l’œil le mieux voyant
+
+| Détails du résultat | |
+| --- | --- |
+| Décimal | 0,04 |
+| Snellen (pieds) | 20/500 |
+| Snellen (mètres) | 6/150,0 |
+
